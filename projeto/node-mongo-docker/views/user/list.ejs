@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Users List</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="/css/image.css">
+</head>
+
+<body class="container">
+    <h1 class="text-center">Users</h1>
+
+    <table>
+
+        <ul>
+            <% users.forEach(function(user) { %>
+            <li><%= user._id %> </li>   
+            <li><%= user.name %> </li>
+            <li><%= user.email %> </li>
+            <img class="img-url" src="<%= user.profileImageUrl %>" />
+            <hr>
+            <% }); %>
+        </ul>
+    </table>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="text-center">
+        <form method="GET" action="/register">
+            <input type="submit" class="btn btn-primary text-center" value="Register">
+        </form>
+    </div>
+
+</body>
+
+</html>

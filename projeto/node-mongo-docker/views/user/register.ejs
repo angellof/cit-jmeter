@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>User Register</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+
+</head>
+
+<body class="container">
+
+    <h1 class="text-center">User Register</h1>
+
+    <div id="mensagemView"></div>
+
+    <form class="form" method="POST" action="/register/save">
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" class="form-control" autofocus />
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input  type="password" id="password" name="password" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="profileImageUrl">Photo Url</label>
+            <input type="text" id="profileImageUrl" name="profileImageUrl" class="form-control" />
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Save</button>
+            <a class="btn btn-secondary" href="register/list"><i class="fa fa-list-alt"></i> View All</a>
+        </div>
+    </form>
+    <br>
+    <br>
+</body>
+
+</html>
